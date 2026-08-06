@@ -4,9 +4,9 @@
 # 🏦 README — Bank Loan Credit Risk Analysis
 
 ```markdown
-# 🏦 Bank Loan Credit Risk Analysis & Dashboard
+#  Bank Loan Credit Risk Analysis & Dashboard
 
-## 📌 Project Overview
+##  Project Overview
 
 This project focuses on analyzing bank loan data to understand customer credit profiles, loan applications, repayment behavior, credit risk, and factors that may influence loan approval and risk.
 
@@ -14,7 +14,7 @@ The project combines data analysis with Power BI visualization to create an inte
 
 ---
 
-## 🎯 Business Problem
+## Business Problem
 
 Banks need to evaluate loan applications carefully to reduce financial risk while providing loans to eligible customers.
 
@@ -31,7 +31,7 @@ This project aims to answer questions such as:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains customer and loan-related information including:
 
@@ -54,7 +54,7 @@ The dataset contains customer and loan-related information including:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - Python
 - Pandas
@@ -67,7 +67,7 @@ The dataset contains customer and loan-related information including:
 
 ---
 
-## 🔍 Data Analysis
+##  Data Analysis
 
 ### Data Cleaning
 
@@ -99,7 +99,7 @@ The analysis covers:
 
 ---
 
-## 📈 Dashboard KPIs
+##  Dashboard KPIs
 
 The Power BI dashboard includes important metrics such as:
 
@@ -116,7 +116,7 @@ The Power BI dashboard includes important metrics such as:
 
 ---
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 The interactive dashboard provides analysis of:
 
@@ -135,7 +135,7 @@ Interactive slicers allow users to filter the analysis by relevant customer and 
 
 ---
 
-## 💡 Key Business Insights
+##  Key Business Insights
 
 The analysis helps identify:
 
@@ -149,7 +149,7 @@ The analysis helps identify:
 
 ---
 
-## 🎯 Business Recommendations
+##  Business Recommendations
 
 Based on the analysis, financial institutions can:
 
