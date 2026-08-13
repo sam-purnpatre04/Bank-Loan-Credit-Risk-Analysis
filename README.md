@@ -1,292 +1,248 @@
-#  Bank Loan Credit Risk Analysis
+# 🏦 Retail Bank Customer Loan & Credit Risk Analysis
 
-## 1. Project Overview
+## 📌 Project Overview
 
-This project focuses on analyzing bank customer loan data to understand loan approval patterns, customer credit profiles, repayment behavior, and potential credit risk.
+The **Retail Bank Customer Loan & Credit Risk Analysis** project focuses on analyzing customer loan data to understand loan approval patterns, customer credit risk, repayment behavior, default rates, and loan performance.
 
-The project uses Python, Pandas, NumPy, Matplotlib, Excel, and Power BI to analyze the data and create an interactive dashboard.
-
-The main objective is to identify factors such as credit score, income, payment history, employment type, loan amount, and credit tier that can help understand customer risk and loan outcomes.
+The project uses **SQL for data analysis**, **Excel for data exploration and reporting**, and **Power BI for interactive visualization and dashboard development**.
 
 ---
 
-## 2. Business Problem
+## 🎯 Business Problem
 
-Banks need to make informed lending decisions while minimizing the risk of loan defaults.
+A retail bank manages a large number of customer loans across different loan purposes, income levels, credit scores, employment types, and payment histories.
 
-The objective of this project is to analyze customer and loan data to answer important business questions such as:
+However, raw loan data does not immediately show **which customers or loan segments carry higher credit risk**.
 
-- What percentage of loans are approved, rejected, and defaulted?
-- Which credit tiers have higher default risk?
-- How does payment history affect loan outcomes?
-- Which loan purposes have higher loan amounts?
-- Which employment types have different loan approval patterns?
-- How does annual income relate to loan amount?
-- How does credit score vary across different loan outcomes?
-- Which cities have higher loan exposure?
-- How can high-risk customers be identified?
+The bank needs to understand:
 
----
+- Loan approval and default patterns
+- Customer credit risk
+- Default rates across different loan purposes
+- Relationship between credit score and loan performance
+- Impact of payment history on defaults
+- Loan exposure across different customer segments
+- Key factors that can help improve lending decisions
 
-## 3. Dataset
+### Problem Statement
 
-The dataset contains customer, financial, credit, and loan-related information.
-
-### Main Columns
-
-- Customer_ID
-- Age
-- Gender
-- City
-- Employment_Type
-- Annual_Income
-- Loan_Amount
-- Loan_Purpose
-- Credit_Score
-- Loan_Tenure_Years
-- EMI_Amount
-- Payment_History
-- Loan_Status
-- DTI_Ratio
-- LTI_Ratio
-- Credit_Tier
+> **Analyze customer loan and credit data to identify default patterns, high-risk customer segments, loan performance trends, and factors influencing credit risk, and present the findings through SQL analysis, Excel reporting, and an interactive Power BI dashboard.**
 
 ---
 
-## 4. Tools & Technologies
+## 🎯 Project Objectives
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Excel
+- Analyze overall loan performance and customer risk.
+- Identify loan segments with higher default rates.
+- Compare default rates across different loan purposes.
+- Analyze customer payment history and its relationship with defaults.
+- Evaluate credit scores and credit tiers to understand customer risk.
+- Analyze loan exposure across different customer segments.
+- Identify patterns that can support better lending decisions.
+- Present key findings through an interactive Power BI dashboard.
+
+---
+
+## 🛠️ Tools & Technologies
+
+### SQL
+
+- MySQL
+- SELECT, WHERE, GROUP BY, HAVING
+- Aggregate Functions
+- CASE WHEN
+- JOINs
+- Subqueries
+- CTEs
+- Window Functions
+- Date and conditional analysis
+
+### Excel
+
+- Data Cleaning
+- Pivot Tables
+- Aggregations
+- Data Analysis
+- Charts and Reporting
+
+### Business Intelligence
+
 - Power BI
 - DAX
-- Git & GitHub
+- KPI Cards
+- Interactive Filters
+- Data Visualization
+- Dashboard Reporting
 
 ---
 
-## 5. Data Preparation
+## 📊 Dataset
 
-The dataset was analyzed and prepared using Python before creating the final analysis and dashboard.
+The dataset contains customer-level loan and credit information.
 
-The data preparation process included:
+### Major Data Fields
 
-- Understanding the dataset structure
-- Checking data types
-- Analyzing missing values
-- Checking duplicate records
-- Reviewing numerical statistics
-- Validating categorical values
-- Handling missing records
-- Preparing the final dataset for analysis
-
----
-
-## 6. Exploratory Data Analysis
-
-The cleaned dataset was analyzed using Pandas, NumPy, and Matplotlib to identify meaningful patterns and relationships.
-
-The analysis focused on:
-
-### Loan Status Analysis
-
-Analyzed the distribution of:
-
-- Approved loans
-- Rejected loans
-- Defaulted loans
-
-This helped understand the overall performance and risk profile of the loan portfolio.
-
-### Credit Risk Analysis
-
-Analyzed:
-
-- Credit Score
-- Credit Tier
-- Loan Status
-- Loan Amount
-
-The relationship between credit tiers and loan outcomes was studied to identify higher-risk customer segments.
-
-### Payment History Analysis
-
-Analyzed customer payment behavior and compared it with loan status to understand whether missed or delayed payments were associated with higher default risk.
-
-### Loan Purpose Analysis
-
-Analyzed loan applications based on:
-
-- Home Loan
-- Car Loan
-- Education Loan
-- Personal Loan
-- Business Loan
-
-This helped identify the most common loan purposes and differences in loan amounts across categories.
-
-### Customer Segmentation
-
-Customers were analyzed based on:
-
-- Gender
-- City
-- Employment Type
-- Credit Tier
-
-This helped identify differences in loan behavior and risk across customer groups.
-
-### Financial Analysis
-
-Analyzed:
-
-- Annual Income
-- Loan Amount
-- EMI Amount
-- Credit Score
-- Loan Tenure
-- DTI Ratio
-- LTI Ratio
-
-These variables were compared to understand customer affordability and potential credit risk.
+- **Customer:** Customer ID, Age, Gender, City
+- **Employment:** Employment Type, Annual Income
+- **Loan:** Loan Amount, Loan Purpose, Loan Tenure
+- **Credit:** Credit Score, Credit Tier
+- **Payment:** Payment History
+- **Risk:** DTI Ratio, LTI Ratio
+- **Loan Performance:** Loan Status
+- **EMI:** EMI Amount
 
 ---
 
-## 7. Python Analysis
+## 🔄 Project Approach
 
-Python was used for exploratory data analysis and visualization.
+The project followed a structured data analysis process:
 
-### Pandas
+**Raw Data → Data Preparation → SQL Analysis → Excel Analysis → KPI Development → Power BI Dashboard → Insights → Recommendations**
 
-Used for:
+### SQL Analysis
 
-- Data exploration
-- Grouping and aggregation
-- Category-wise analysis
-- Loan status analysis
-- Customer segmentation
-- Comparing loan and financial attributes
+SQL was used to analyze the loan dataset and answer important business questions such as:
 
-### NumPy
+- What is the overall default rate?
+- Which loan purpose has the highest default rate?
+- How does payment history affect default risk?
+- Which credit tiers have higher default rates?
+- How does loan amount vary across customer segments?
+- Which customer groups represent higher loan exposure?
 
-Used for:
+Complex SQL concepts such as **CTEs, CASE statements, aggregations, subqueries, and window functions** were used where required to perform the analysis.
 
-- Numerical analysis
-- Statistical calculations
-- Correlation analysis
-- Understanding relationships between financial variables
+### Excel Analysis
 
-### Matplotlib
+Excel was used to further analyze and summarize the loan data using:
 
-Used to create visualizations for:
-
-- Loan Status Distribution
-- Loan Purpose Analysis
-- Credit Tier vs Loan Status
-- Payment History vs Loan Status
-- Loan Amount Analysis
-- Credit Score Analysis
-- Customer Segmentation
+- Pivot Tables
+- Aggregations
+- Conditional analysis
+- Loan and default summaries
+- Supporting charts and reports
 
 ---
 
-## 8. Power BI Dashboard
+## 📊 Power BI Dashboard
 
-An interactive Power BI dashboard was created to present the major findings from the analysis.
+The final analysis was presented through an interactive **Power BI Credit Risk Dashboard**.
 
-### Dashboard KPIs
+The dashboard provides a consolidated view of:
 
-The dashboard includes:
-
-- Total Customers
 - Total Loan Amount
-- Average Credit Score
-- Approved Loans
-- Defaulted Loans
+- Total Customers
 - Default Rate
+- Loan Performance
+- Default Rate by Loan Purpose
+- Default Rate by Payment History
+- Credit Tier Analysis
+- Customer and Loan Segmentation
 
-### Dashboard Visualizations
+### Dashboard Preview
 
-The dashboard provides insights into:
-
-- Loan Portfolio by Status
-- Loan Amount by Loan Purpose
-- Credit Risk Across Credit Tiers
-- Payment Behavior and Loan Outcomes
-- Loan Amount by City
-- Defaulted Loans by Employment Type
-- Average Credit Score by Loan Status
-- Credit Score and Risk Analysis
-
-### Interactive Filters
-
-The dashboard includes slicers for:
-
-- City
-- Credit Tier
-
-These filters allow users to interactively explore different customer segments.
+![Retail Bank Loan & Credit Risk Dashboard](dashboard.png)
 
 ---
 
-## 9. Key Insights
+## 📈 Key KPIs
 
-The analysis was used to identify important patterns in customer lending behavior.
-
-Key areas of insight include:
-
-- Loan approval and default distribution
-- Credit tier and default relationships
-- Payment history and loan outcomes
-- Loan demand across different loan purposes
-- Loan exposure across cities
-- Employment type and loan outcomes
-- Relationship between income and loan amount
-- Credit score and loan behavior
-- Potential high-risk customer segments
+| KPI | Result |
+|---|---:|
+| Total Loan Exposure | **₹5B+** |
+| Overall Default Rate | **55%** |
+| Highest Default Rate – Education Loans | **57.29%** |
+| Default Rate – Missed Payment History | **96.75%** |
+| Default Rate – Poor Payment History | **84.22%** |
 
 ---
 
-## 10. Business Recommendations
+## 🔍 Key Insights
 
-Based on the analysis, banks can:
+### 💰 Loan Exposure
 
-- Give greater importance to credit score and payment history during credit assessment.
-- Closely monitor customers with poor credit tiers.
-- Monitor customers with high DTI and LTI ratios.
-- Identify customer segments with higher default risk.
-- Use customer and loan characteristics to improve lending decisions.
-- Monitor loan purposes and locations with higher loan exposure.
-- Use data-driven risk assessment to reduce potential loan defaults.
-- Develop targeted strategies for different customer risk segments.
+- The analysis covered more than **₹5B in total loan exposure**.
+- Loan exposure was analyzed across different customer and loan segments to understand where the bank has greater financial risk.
+
+### 📚 Loan Purpose
+
+- **Education Loans recorded the highest default rate at 57.29%** among the analyzed loan purposes.
+- This indicates that specific loan-purpose segments may require closer risk monitoring.
+
+### 💳 Payment History
+
+- Customers with **Missed payment history had a 96.75% default rate**.
+- Customers with **Poor payment history had an 84.22% default rate**.
+- Payment behavior therefore provides an important indicator for identifying high-risk customers.
+
+### 📊 Credit Risk
+
+- Customer credit scores and credit tiers were analyzed to understand differences in loan performance and default risk.
+- Segmenting customers by credit characteristics can help the bank make more informed lending decisions.
 
 ---
 
-## 11. Project Outcome
+## 🚧 Challenges Faced & Solutions
 
-This project demonstrates an end-to-end data analytics workflow, starting from raw bank loan data and progressing through data preparation, exploratory analysis, visualization, and business intelligence.
+### Challenge 1 — Identifying High-Risk Customer Segments
 
-The project helped transform customer and loan-level data into meaningful business insights that can support better credit risk monitoring and lending decisions.
+The dataset contained multiple customer, loan, credit, and payment-related attributes, making it difficult to identify the segments contributing most to default risk.
+
+**Solution:**  
+I used SQL aggregations, conditional analysis, and segmentation to compare default rates across loan purposes, payment histories, and credit tiers.
+
+### Challenge 2 — Comparing Multiple Loan Segments
+
+Different loan purposes and customer groups had different levels of loan exposure and default rates.
+
+**Solution:**  
+I created grouped SQL analysis and Excel Pivot Tables to compare loan performance across different segments.
+
+### Challenge 3 — Presenting Risk Analysis Clearly
+
+The analysis contained multiple risk-related metrics that could be difficult to interpret from raw tables.
+
+**Solution:**  
+I converted the important findings into KPIs and interactive Power BI visuals so that business users could quickly identify high-risk segments.
 
 ---
 
-## 12. Project Structure
+## 💡 Business Recommendations
 
-```text
-Bank-Loan-Credit-Risk-Analysis/
-│
-├── Dataset/
-│   └── bank_loan_data.csv
-│
-├── Python/
-│   └── Bank_Loan_Credit_Risk_Analysis.ipynb
-│
-├── PowerBI/
-│   ├── Bank_Loan_Credit_Risk_Dashboard.pbix
-│   └── Dashboard_Screenshot.png
-│
-├── Excel/
-│   └── Bank_Loan_Credit_Risk_Analysis.xlsx
-│
-└── README.md
+Based on the analysis:
+
+- Closely monitor customers with **Missed or Poor payment histories**.
+- Apply additional risk assessment to high-default loan-purpose segments.
+- Use credit scores and credit tiers as important inputs during loan evaluation.
+- Monitor high loan-exposure customer segments regularly.
+- Develop targeted risk mitigation strategies for customers showing early signs of repayment problems.
+- Use dashboard KPIs to continuously monitor loan performance and default trends.
+
+---
+
+## 🧠 Key Learning
+
+This project helped me understand how SQL and Excel can be used to transform raw banking data into meaningful business insights.
+
+Through this project, I gained practical experience in:
+
+- Writing SQL queries for business analysis.
+- Using aggregations, CTEs, subqueries, and window functions.
+- Analyzing credit risk and loan performance.
+- Using Excel Pivot Tables for data analysis.
+- Creating meaningful KPIs.
+- Building an interactive Power BI dashboard.
+- Translating analytical findings into business recommendations.
+
+---
+
+## 🚀 Future Improvements
+
+The project can be further improved by:
+
+- Adding historical loan performance tracking.
+- Developing a more detailed customer risk scoring model.
+- Adding loan approval trend analysis.
+- Monitoring early indicators of potential defaults.
+- Adding automated data refresh and reporting.
+- Building more detailed customer-level risk segmentation.
